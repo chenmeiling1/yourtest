@@ -137,7 +137,7 @@ def predict_page():
                       region_northeast,region_southeast,region_northwest,region_southwest]
 
     #使用pickle 的1oad 方法从磁盘文件反序列化加载一个之前保存的随机森林回归模型
-    with open (r'D:\streamlit_env\rfr_model.pkl','rb')as f:
+    with open ('rfr_model.pkl','rb')as f:
         rfr_model = pickle.load(f)
 
     if submitted:
