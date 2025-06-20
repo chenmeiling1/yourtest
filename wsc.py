@@ -8,7 +8,7 @@ import pickle
 #设置输出右对齐，防止中文不对齐
 pd.set_option('display.unicode.east_asian_width',True)
 #读取数据集，并将字符编码指定为gbk，防止中文报错
-insurance_df=pd.read_csv('D:/streamlit_env/insurance-chinese.csv',encoding='gbk')
+insurance_df=pd.read_csv('insurance-chinese.csv',encoding='gbk')
 
 
 #将医疗费用定义为目标输出变量
